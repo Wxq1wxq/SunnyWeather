@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周六"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/item_center_date_tv"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="晴"
+        android:layout_toRightOf="@id/item_center_date_tv"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/item_center_weather"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_center_temp"
+        android:text="10~1"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/item_center_iv"
+        android:layout_toLeftOf="@id/item_center_temp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/icon"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/item_center_date_tv"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>
